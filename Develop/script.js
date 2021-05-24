@@ -121,80 +121,41 @@ $('#btn18').on('click', function() {
 // click ends //
 
 
-
-
+// make sure text input presist when page reloaded
 
 
 
 // Color Code timebocks for past, present, future
-// var hour = document.querySelector("#time-block");
-
-// var hour = {
-//     time: ["9:00"]
-// }
+    var hour = new Date().getHours();
+    console.log(hour)
 
 
-// make sure text input presist when page reloaded
 
-//var schedule = {};
 
-// $(".time-block").each(function () {            
-//     var time = parseInt($(this).attr("id"));
-//     $(this).children().each(function() {
-//         var text = $(this)
-//         .find("textarea")
 
-//         var time = $(this)
-//         .find("hour")
 
-//         tempArr.push({
-//             text: text,
-//             hour: hour
-//         })
-//     })
-// })
+
+
+
+
 
 
 
 //
 
- //var time = momemt.hour("HH");
 
 
 
-
-// var getTime = function (timeEl) {
-// if (moment().isAfter(time)) {
-//     $(timeEl).addClass("time-block");
-// }
-//  else if (time > timeEL) {
-//      $("time-block").addClass("past");
-// }
-// else if (time = hour) {
-//     $("time-block").addClass("present");
-// }
-// else if (time < hour) {
-//     $("time-block").addClass("future");
-//}
-//  }}
-
-////else if (Math.abs(moment().diff(time, "hour"))) {
-  //$(timeEl).addClass("time-block");
-//}
-//}
-//console.log(time);
-
-// time = new Date();
-// $(".time-block").each(function () {            
-// var getTime = parseInt($(this).attr("id"));
-
-// if (getTime < time ) {
-// $(this).addClass(past);
-// }
-// else if (getTime = time) {
-// $(this).addClass(present);
-// }
-// else (getTime > time) {
-// $(this).addClass(future);
-// });
-// }
+var getTime = function (timeEl) {
+if (moment().isAfter(time)) {
+    $(timeEl).addClass("time-block");
+}
+ else if (time > timeEL) {
+     $("time-block").addClass("past");
+}
+else if (time = hour) {
+    $("time-block").addClass("present");
+}
+else if (time < hour) {
+    $("time-block").addClass("future");
+}};
