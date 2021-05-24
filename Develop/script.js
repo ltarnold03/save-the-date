@@ -9,23 +9,6 @@ console.log(currentDay);
 
 // click begins //
 
-$('#btn0').on('click', function() {
-    var input0 = document.querySelector("#hour0");
-    localStorage.setItem("#btn0", input0.value)
-    $("#hour0").append(input0);
-    localStorage.getItem("#btn0");
-    return input0.value
-})
-
-
-$('#btn1').on('click', function() {
-    //alert("clicked");
-    var input1 = document.querySelector("#hour1");
-    localStorage.setItem("#btn1", input1.value)
-    $("#hour1").append(input1);
-    localStorage.getItem("#btn1");
-    return input1.value
-})
 
 
 $('#btn9').on('click', function() {
